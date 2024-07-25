@@ -1697,3 +1697,8 @@ iframe{
 .image-overlay .btn {
   margin-top: 20px; /* adjust the margin to your liking */
 }
+@media (max-width: 768px) {
+  .navbar {
+    background-color: #000; /* or any other black color code */
+  }
+}
