@@ -1213,7 +1213,7 @@ acronym{
 }
 .f-inner strong{
 	font-family: 'Raleway', sans-serif;
-	color: #ffffff!important;	
+	color:  #d0ad55!important;	
 	font-weight: 400;
 	font-size: 14px;
 	letter-spacing: 1px;
@@ -1231,8 +1231,8 @@ acronym{
 	margin-top: 6px;
 }
 .f-copyright span{
-	color: #aaaaaa;
-	font-size: 12px;
+  color:  #d0ad55;
+	font-size: 24px;
 }
 ul.footer-social{
 	float: right;
@@ -1700,5 +1700,135 @@ iframe{
 @media (max-width: 768px) {
   .navbar {
     background-color: #000; /* or any other black color code */
+  }
+}
+.price-table {
+  max-width: 300px;
+  margin: 0 auto;
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.pricing-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.col-sm-4 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+.caption h1 {
+  font-size: 2rem;
+}
+
+.price-table:hover {
+  transform: scale(1.05); /* Enlarge slightly on hover */
+}
+
+@media (max-width: 768px) {
+  .col-sm-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+#services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#services .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#services .service-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+  width: calc(33.33% - 20px);
+}
+
+#services .service-box i {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#services .service-box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#services .service-box p {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 768px) {
+  #services .service-box {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #services .service-box {
+    width: 100%;
+  }
+}
+
+.video-section {
+    padding: 50px 0;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border: none;
+}
+
+.video-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.video-title h2 {
+    font-size: 24px;
+    color: #333; /* Customize this color */
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 767px) {
+    .video-section .row {
+        flex-direction: column;
+    }
+    
+    .video-container,
+    .video-title {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .video-title h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+  .f-copyright {
+      font-size: 18px;
+      padding-right: 10px;
   }
 }
