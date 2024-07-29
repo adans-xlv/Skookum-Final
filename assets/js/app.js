@@ -661,3 +661,24 @@
 
 
 })(jQuery, window, document);
+document.addEventListener('DOMContentLoaded', function() {
+  const slides = document.querySelectorAll('.slideshow-slide');
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides[currentSlide].classList.remove('active');
+    slides[index].classList.add('active');
+    currentSlide = index;
+  }
+
+  function nextSlide() {
+    let nextIndex = (currentSlide + 1) % slides.length;
+    showSlide(nextIndex);
+  }
+
+  // Show the first slide
+  showSlide(0);
+
+  // Change slide every 2 seconds
+  setInterval(nextSlide, 7000);
+});
