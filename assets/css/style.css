@@ -1946,6 +1946,7 @@ iframe{
 }
 
 .video-title h2 {
+  font-family: 'Raleway', sans-serif;
     font-size: 24px;
     color: #333; /* Customize this color */
 }
@@ -2057,12 +2058,14 @@ iframe{
   font-size: 3em;
   margin-bottom: 10px;
   color: #d0ad55;
+  font-family: 'Raleway', sans-serif;
 }
 
 .hero-subtext {
   font-size: 1.5em;
   margin-bottom: 15px;
   color: white;
+  font-family: 'Raleway', sans-serif;
 }
 
 .gold-btn {
