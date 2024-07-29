@@ -205,7 +205,14 @@ Table of Contents:
 .navbar-nav.navbar-right {
   float: right;
 }
+.mobile-buttons {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 
+.mobile-buttons .btn {
+  margin-bottom: 10px;
+}
 @media (max-width: 767px) {
   .navbar-center {
       display: none;
@@ -218,6 +225,30 @@ Table of Contents:
   .navbar-collapse {
       clear: both;
   }
+  .mobile-buttons {
+    display: block;
+}
+}
+@media (min-width: 768px) {
+  .mobile-buttons {
+      display: none;
+  }
+}
+
+.navbar-default .navbar-toggle {
+  z-index: 2;
+}
+
+.btn-primary {
+  background-color: #d0ad55;
+  border-color: #d0ad55;
+  color: #000;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #fff;
 }
 
 .navbar-default .navbar-toggle {
