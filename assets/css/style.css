@@ -178,7 +178,51 @@ Table of Contents:
   background-color: transparent;
 }
 
+.navbar-header {
+  float: left;
+  width: 100%;
+}
 
+.navbar-brand {
+  float: left;
+}
+
+.navbar-toggle {
+  float: right;
+  margin-right: 15px;
+}
+
+.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1;
+  width: auto;
+  white-space: nowrap;
+}
+
+.navbar-nav.navbar-right {
+  float: right;
+}
+
+@media (max-width: 767px) {
+  .navbar-center {
+      display: none;
+  }
+  
+  .navbar-nav.navbar-right {
+      float: none;
+  }
+  
+  .navbar-collapse {
+      clear: both;
+  }
+}
+
+.navbar-default .navbar-toggle {
+  z-index: 2;
+}
 .navbar{
   background-color: #000;
 }
@@ -1873,6 +1917,7 @@ iframe{
     font-size: 24px;
     color: #333; /* Customize this color */
 }
+
 
 /* Mobile View Adjustments */
 @media (max-width: 767px) {
