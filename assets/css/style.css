@@ -1942,3 +1942,14 @@ iframe{
       padding-right: 10px;
   }
 }
+.survey-logo {
+  width: 50px;
+  height: 50px;
+  margin: 20px auto;
+  display: block;
+  color: #d0ad55;
+}
+
+.logo-container {
+  text-align: center;
+}
