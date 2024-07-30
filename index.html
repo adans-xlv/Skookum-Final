@@ -293,24 +293,78 @@
         
 
             <!-- Our Clients -->                
-            <div id="our-clients">
-                <div class="padding-top-x2 padding-bottom container text-center">  
-                    <!-- Section General Title -->
-                    <div class="general-title">
-                        <h2>Our Clients</h2>    
-                        <div class="space-bottom-2x"></div>                      
-                    </div>                            
-                    <div class="row">                                
-                
-                        <div id="owl-demo">
-                            <a href="#"><img src="assets/img/about/client_1.png" alt="Owl Image"></a>
-                            <a href="#"><img src="assets/img/about/client_2.png" alt="Owl Image"></a>
-                            <a href="#"><img src="assets/img/about/client_3.png" alt="Owl Image"></a>
-                        </div>                                
-
-                    </div><!-- /row -->  
+            <div id="our-clients" style="background-color: #000; padding: 50px;">
+                <div class="container text-center">  
+                  <!-- Section General Title -->
+                  <div class="general-title">
+                    <h2 style="color: #fff;">Our Clients</h2>    
+                    <div class="space-bottom-2x"></div>                      
+                  </div>                            
+                  <div class="row">                                
+                    <div id="owl-demo">
+                      <a href="#"><img src="assets/img/Logo/dtb bg.png" alt="Owl Image"></a>
+                      <a href="#"><img src="assets/img/Logo/M oriental bank.png" alt="Owl Image"></a>
+                      <a href="#"><img src="assets/img/Logo/nssf logo.png" alt="Owl Image"></a>
+                    </div>                                
+              
+                  </div><!-- /row -->  
                 </div><!-- /container -->
-            </div>                    
+              </div>
+              
+              <style>
+                #owl-demo {
+                  display: flex;
+                  justify-content: center;
+                  flex-wrap: wrap;
+
+                }
+              
+                #owl-demo a {
+                  display: inline-block;
+                  margin: 20px;
+                }
+              
+                #owl-demo img {
+                  width: 200px;
+                  height: 100px;
+                  margin: 0 auto;
+                  display: block;
+                }
+              
+                #owl-demo {
+                  width: 100%;
+                }
+              
+                #owl-demo.owl-stage {
+                  display: flex;
+                  justify-content: center;
+                }
+              
+                #owl-demo.owl-item {
+                  margin: 20px;
+                }
+                
+              </style>
+              
+              <script>
+                $("#owl-demo").owlCarousel({
+                  loop: true,
+                  margin: 10,
+                  nav: true,
+                  center: true,
+                  responsive: {
+                    0: {
+                      items: 1
+                    },
+                    600: {
+                      items: 3
+                    },
+                    1000: {
+                      items: 5
+                    }
+                  }
+                });
+              </script>                 
             <!-- End Our Clients -->  
             <div class="container padding-top-x2 padding-bottom text-center">
                 <div class="general-title">
