@@ -2106,3 +2106,29 @@ iframe{
     font-size: 0.9em;
   }
 }
+.navbar-brand {
+	display: flex;
+	align-items: center;
+}
+
+.navbar-brand img {
+	height: 50px;
+	margin-right: 10px;
+	width: auto;
+}
+
+.navbar-brand span {
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+}
+
+@media (max-width: 768px) {
+	.navbar-brand img {
+			height: 30px;
+			margin-right: 5px;
+	}
+	.navbar-brand span {
+			font-size: small;
+	}
+}
