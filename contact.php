@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+
 if (!$_POST) exit;
 
 // Email address verification
@@ -65,5 +67,6 @@ if (mail($address, $e_subject, $msg, $headers)) {
     echo "</div>";
     echo "</fieldset>";
 } else {
-    echo 'ERROR!';
+    echo 'ERROR! ' . error_get_last()['message'];
 }
+?>
