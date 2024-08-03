@@ -83,14 +83,14 @@
                     <strong style="font-family: 'Raleway', sans-serif">Call to request an appointment :</strong>
                     <a href="tel:08082390849" style="color: #fff;">0808 239 0849</a>
                 </div>
-        
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>                                                                            
-                        <li><a href="projects.html">Projects</a></li>                    
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>  
+                        <li class="active"><a href="#home" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Home</a></li>
+                        <li><a href="#about" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">About</a></li>
+                        <li><a href="#gallery" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Gallery</a></li>
+                        <li><a href="#services" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Products and Services</a></li>
+                        <li><a href="#contact" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">How to Order</a></li>
                     </ul>
                     <div class="mobile-buttons visible-xs">
                         <a href="contact.html" class="btn btn-primary btn-block">Download Brochure</a>
@@ -99,6 +99,14 @@
                 </div>
             </div>
         </nav>
+        
+        <script>
+            $(document).ready(function() {
+                $('.navbar-nav li a').on('click', function() {
+                    $('.navbar-collapse').collapse('hide');
+                });
+            });
+        </script>
 <!-- FULL-WIDTH IMAGE WITH BUTTON AND HERO TEXT -->
 <div class="slideshow-container">
     <div class="slideshow-slide active">
@@ -132,7 +140,7 @@
         </div>
       </div>
     <div class="slideshow-slide">
-        <img src="assets/img/slider-images/Roller BEST Quality Galana.jpg" alt="Slide 3">
+        <img src="assets/img/slider-images/Film.jpeg" alt="Slide 3">
         <div class="image-overlay">
           <div class="content-container">
             <h1 class="hero-text">Decorative window films</h1>
@@ -145,7 +153,8 @@
 
         <!-- Site Wrapper -->
         <div class="site-wrapper">
-
+<!-- About section -->
+<section id="about">
             <!-- Who We Are -->            
             <div class="container padding-bottom">              
                     
@@ -157,10 +166,12 @@
                             <div class="space-bottom-2x"></div>   
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                        <div class="space-bottom-2x"></div>   
+                        <div class="space-bottom-2x"></div> 
+                        <a href="about.html" class="btn gold-btn">Read More</a>  
                     </div>                            
                 </div>                                     
-            </div><!-- /container -->                   
+            </div>
+</section><!-- /container -->                   
             <!-- End Who We Are -->
 
             <!-- Projects -->            
@@ -177,7 +188,10 @@
                     </div>
                     
                                                                                                                              
-                    <!-- Project Item (image, link and description for your project) -->
+                   
+                 <!-- Project Item (image, link and description for your project) -->
+                 <!-- Gallery section -->
+<section id="gallery">
                     <div class="col-sm-6 col-md-4">
                         <div class="project-inner">
                             <a href="projects.html">  
@@ -229,10 +243,13 @@
                     </div> 
 
                 </div><!-- /row -->                                                                                                                
-            </div><!-- /container -->                                    
+            </div>
+        </section><!-- /container -->                                    
             <!-- End Projects -->            
             
-            <!-- Our Services -->            
+            <!-- Our Services -->  
+            <!-- Services section -->
+<section id="services">          
             <div class="container padding-bottom padding-top-x2 text-center" id="services">                                 
                 
                 <div class="row"> 
@@ -294,7 +311,8 @@
                         
                       
                 </div><!-- /row -->                           
-            </div><!-- /container -->
+            </div>
+        </section><!-- /container -->
             <!-- End Our Services -->
                 
            <!-- Video Section -->
@@ -398,7 +416,9 @@
                   }
                 });
               </script>                 
-            <!-- End Our Clients -->  
+            <!-- End Our Clients --> 
+<!-- Contact section -->
+<section id="contact"> 
             <div class="container padding-top-x2 padding-bottom text-center">
                 <div class="general-title">
                   <h2 style="color: white;">How it Works</h2>
@@ -551,7 +571,7 @@
               
                 </div>
               </div>
-              
+            </section>  
 
             <!-- /site-wrapper -->
         <!-- End Site Wrapper --> 
