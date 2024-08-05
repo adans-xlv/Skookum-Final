@@ -1313,7 +1313,7 @@ acronym{
 .footer-big{
 	color: #aaaaaa;
 	background-color: black;
-	font-size: 15px;
+	font-size: 10px;
 }
 #footer{
 	background-color: black;
@@ -1355,7 +1355,7 @@ acronym{
 	font-family: 'Raleway', sans-serif;
 	color:  #d0ad55!important;	
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 10px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
