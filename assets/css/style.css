@@ -1064,7 +1064,7 @@ a:focus {
 	margin-right: 7px;
 }
 .blog-inner-title a{
-	color: #333;
+	color: white;
 }
 .blog-inner-title a:hover{
 	color: #d0ad55;
@@ -1092,6 +1092,25 @@ a:focus {
 }
 .blog-post-details blockquote{
 	color: #999;
+}
+
+#filters-blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cbp-filter-item {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .cbp-filter-item {
+    width: 100%;
+  }
 }
 
 /* ----------------------------------------------------

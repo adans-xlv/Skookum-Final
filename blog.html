@@ -35,6 +35,14 @@
         <!-- Css Theme -->           
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
+    <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
+    <script>
+    var wa_btnSetting = {"btnColor":"#16BE45","ctaText":"Talk to us","cornerRadius":40,"marginBottom":20,"marginLeft":20,"marginRight":20,"btnPosition":"right","whatsAppNumber":"254786695616","welcomeMessage":"Hello, I would like to make an inquiry.","zIndex":999999,"btnColorScheme":"light"};
+    var wa_widgetSetting = {"title":"Skookum Investements LTD","subTitle":"Typically replies in 30 minutes","headerBackgroundColor":"#000000","headerColorScheme":"light","greetingText":"Hi there! \nHow can I help you?","ctaText":"Get in touch","btnColor":"#16BE45","cornerRadius":40,"welcomeMessage":"Hello","btnColorScheme":"light","brandImage":"/assets/img/Logo/Cropped Logo.jpg","darkHeaderColorScheme":{"title":"#333333","subTitle":"#4F4F4F"}};
+    window.onload = () => {
+      _waEmbed(wa_btnSetting, wa_widgetSetting);
+    };
+    </script>
     <body>
 
         <!--Start Preloader-->
@@ -50,37 +58,54 @@
         <!--End Preloader-->
 
         <!-- Navbar -->
-        <nav class="navbar navbar-default navbar-fixed-top header-nav" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top header-nav" role="navigation" style="background-color: #000 !important; border: none;">
             <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <!-- Logo -->        
-                    <a class="navbar-brand" href="index.html">SKOOKUM</a>        
+                    <a class="navbar-brand" href="index.html" style="font-size: large;">
+                        <img src="assets/img/Logo/Cropped Logo.jpg" alt="Logo" style="height: 50px; margin-right: 10px;">
+                        SKOOKUM INVESTMENTS LTD
+                    </a>                     
                 </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>                                                                            
-                        <li><a href="projects.html">Projects</a></li>                    
-                        <li><a href="services.html">Services</a></li>                     
-                        <li><a href="contact.html">Contact</a></li>  
+                
+                <div class="navbar-text navbar-center hidden-xs" style="color: #d0ad55;">
+                    <strong style="font-family: 'Raleway', sans-serif">Call to request an appointment :</strong>
+                    <a href="tel:08082390849" style="color: #fff;">0808 239 0849</a>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Home</a></li>
+                        <li><a href="projects.html" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Gallery</a></li>
+                        <li><a href="blog.html" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Products and Services</a></li>
+                        <li><a href="contact.html" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">How to Order</a></li>
                     </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
+                    <div class="mobile-buttons visible-xs">
+                        <a href="contact.html" class="btn btn-primary btn-block">Download Brochure</a>
+                        <a href="tel:08082390849" class="btn btn-success btn-block">Call 0808 239 0849</a>
+                    </div>   
+                </div>
+            </div>
         </nav>
+        
+        <script>
+            $(document).ready(function() {
+                $('.navbar-nav li a').on('click', function() {
+                    $('.navbar-collapse').collapse('hide');
+                });
+            });
+        </script>
         <!-- Navbar -->
                 
         <!-- Header Background Parallax Image -->
         <div id="blog_bg">
             <div class="head-title">
-                <h2>Our Blog</h2>                
+                <h2>Our Products and Services</h2>                
             </div>  
         </div>
         <!-- End Header Background Parallax Image -->
@@ -88,251 +113,279 @@
         <!-- Site Wrapper -->
         <div class="site-wrapper padding-bottom">
 
-            <!-- Blog -->
-            <div class="container">
-                <div class="row">
+          <!-- Blog -->
+<div class="container">
+    <div class="row">
 
-                    <!-- Blog Filters -->
-                    <div id="filters-blog" class="cbp-l-filters-list hidden-xs">
-                        <div data-filter="*" class="cbp-filter-item-active cbp-filter-item cbp-l-filters-list-first">All (<div class="cbp-filter-counter"></div>)</div>
-                        <div data-filter=".ideas" class="cbp-filter-item">Interior Ideas (<div class="cbp-filter-counter"></div>)</div>
-                        <div data-filter=".house-design" class="cbp-filter-item">House Design (<div class="cbp-filter-counter"></div>)</div>
-                        <div data-filter=".decoration" class="cbp-filter-item">Decoration (<div class="cbp-filter-counter"></div>)</div>
-                        <div data-filter=".motion" class="cbp-filter-item cbp-l-filters-list-last">Motion (<div class="cbp-filter-counter"></div>)</div>
+<!-- Blog Filters -->
+<div id="filters-blog" class="cbp-l-filters-list">
+    <div data-filter="*" class="cbp-filter-item-active cbp-filter-item cbp-l-filters-list-first">All (<div class="cbp-filter-counter"></div>)</div>
+    <div data-filter=".window-treatment" class="cbp-filter-item">Window Treatment (<div class="cbp-filter-counter"></div>)</div>
+    <div data-filter=".window-blinds" class="cbp-filter-item">Window Blinds (<div class="cbp-filter-counter"></div>)</div>
+    <div data-filter=".window-films" class="cbp-filter-item">Window Films (<div class="cbp-filter-counter"></div>)</div>
+    <div data-filter=".motorization" class="cbp-filter-item cbp-l-filters-list-last">Motorization (<div class="cbp-filter-counter"></div>)</div>
+</div>
+
+        <div id="grid-blog" class="cbp-l-grid-blog">
+            <ul>
+                <!-- Blog Item -->
+                <li class="cbp-item window-treatment">
+                    <a href="blog-posts/post1.html" class="cbp-caption cbp-singlePage">
+                        <!-- Blog Image -->
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="assets/img/blog/blog_1.jpg" alt="Specifie an alternate text for an image">                    
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">View Post</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Blog Information -->
+                    <div class="text-center">
+                        <a href="blog-posts/post1.html" class="cbp-l-grid-blog-title cbp-singlePage" style="color: white;">Lorem ipsum dolor sit amet</a>
+                        <div class="cbp-l-grid-blog-date">20 december 2013</div>
+                        <div class="cbp-l-grid-blog-split">|</div>
+                        <a href="#" class="cbp-l-grid-blog-comments">12 comments</a>
                     </div>
+                                               
+                </li>
 
-                    <div id="grid-blog" class="cbp-l-grid-blog">
-                        <ul>
-                            <!-- Blog Item -->
-                            <li class="cbp-item ideas motion">
-                                <a href="blog-posts/post1.html" class="cbp-caption cbp-singlePage">
-                                    <!-- Blog Image -->
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="assets/img/blog/blog_1.jpg" alt="Specifie an alternate text for an image">                    
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignCenter">
-                                            <div class="cbp-l-caption-body">
-                                                <div class="cbp-l-caption-text">View Post</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Blog Information -->
-                                <div class="text-center">
-                                    <a href="blog-posts/post1.html" class="cbp-l-grid-blog-title cbp-singlePage">Lorem ipsum dolor sit amet</a>
-                                    <div class="cbp-l-grid-blog-date">20 december 2013</div>
-                                    <div class="cbp-l-grid-blog-split">|</div>
-                                    <a href="#" class="cbp-l-grid-blog-comments">12 comments</a>
+                <!-- Blog Item -->
+                <li class="cbp-item window-treatment">
+                    <a href="blog-posts/post2.html" class="cbp-caption cbp-singlePage">
+                        <!-- Blog Image -->
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="assets/img/blog/blog_2.jpg" alt="Specifie an alternate text for an image">                    
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">View Post</div>
                                 </div>
-                                <div class="cbp-l-grid-blog-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat magna aliquam erat volutpat.</div>                            
-                            </li>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Blog Information -->
+                    <div class="text-center">
+                        <a href="blog-posts/post2.html" class="cbp-l-grid-blog-title cbp-singlePage" style="color: white;">Consectetuer adipiscing elit sed diam </a>
+                        <div class="cbp-l-grid-blog-date">11 december 2013</div>
+                        <div class="cbp-l-grid-blog-split">|</div>
+                        <a href="#" class="cbp-l-grid-blog-comments">1 comments</a>
+                    </div>
+                    
+                </li>
 
-                            <!-- Blog Item -->
-                            <li class="cbp-item house-design decoration">
-                                <a href="blog-posts/post2.html" class="cbp-caption cbp-singlePage">
-                                    <!-- Blog Image -->
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="assets/img/blog/blog_2.jpg" alt="Specifie an alternate text for an image">                    
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignCenter">
-                                            <div class="cbp-l-caption-body">
-                                                <div class="cbp-l-caption-text">View Post</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Blog Information -->
-                                <div class="text-center">
-                                    <a href="blog-posts/post2.html" class="cbp-l-grid-blog-title cbp-singlePage">Consectetuer adipiscing elit sed diam </a>
-                                    <div class="cbp-l-grid-blog-date">11 december 2013</div>
-                                    <div class="cbp-l-grid-blog-split">|</div>
-                                    <a href="#" class="cbp-l-grid-blog-comments">1 comments</a>
+                <!-- Blog Item -->
+                <li class="cbp-item window-films">
+                    <a href="blog-posts/post3.html" class="cbp-caption cbp-singlePage">
+                        <!-- Blog Image -->
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="assets/img/blog/blog_3.jpg" alt="Specifie an alternate text for an image">                    
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">View Post</div>
                                 </div>
-                                <div class="cbp-l-grid-blog-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat magna aliquam erat volutpat.</div>
-                            </li>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Blog Information -->
+                    <div class="text-center">
+                        <a href="blog-posts/post3.html" class="cbp-l-grid-blog-title cbp-singlePage" style="color: white;">Nonummy nibh euismod tincidunt</a>
+                        <div class="cbp-l-grid-blog-date">2 december 2013</div>
+                        <div class="cbp-l-grid-blog-split">|</div>
+                        <a href="#" class="cbp-l-grid-blog-comments">22 comments</a>
+                    </div>
+                    
+                </li>
 
-                            <!-- Blog Item -->
-                            <li class="cbp-item ideas motion">
-                                <a href="blog-posts/post3.html" class="cbp-caption cbp-singlePage">
-                                    <!-- Blog Image -->
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="assets/img/blog/blog_3.jpg" alt="Specifie an alternate text for an image">                    
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignCenter">
-                                            <div class="cbp-l-caption-body">
-                                                <div class="cbp-l-caption-text">View Post</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Blog Information -->
-                                <div class="text-center">
-                                    <a href="blog-posts/post3.html" class="cbp-l-grid-blog-title cbp-singlePage">Nonummy nibh euismod tincidunt</a>
-                                    <div class="cbp-l-grid-blog-date">2 december 2013</div>
-                                    <div class="cbp-l-grid-blog-split">|</div>
-                                    <a href="#" class="cbp-l-grid-blog-comments">22 comments</a>
+                <!-- Blog Item -->
+                <li class="cbp-item window-films">
+                    <a href="blog-posts/post4.html" class="cbp-caption cbp-singlePage">
+                        <!-- Blog Image -->
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="assets/img/blog/blog_4.jpg" alt="Specifie an alternate text for an image">                    
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">View Post</div>
                                 </div>
-                                <div class="cbp-l-grid-blog-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat magna aliquam erat volutpat.</div>
-                            </li>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Blog Information -->
+                    <div class="text-center">
+                        <a href="blog-posts/post4.html" class="cbp-l-grid-blog-title cbp-singlePage" style="color: white;">Ut laoreet dolore magna aliquam</a>
+                        <div class="cbp-l-grid-blog-date">2 december 2013</div>
+                        <div class="cbp-l-grid-blog-split">|</div>
+                        <a href="#" class="cbp-l-grid-blog-comments">22 comments</a>
+                    </div>
+                    
+                </li>
 
-                            <!-- Blog Item -->
-                            <li class="cbp-item house-design ideas">
-                                <a href="blog-posts/post4.html" class="cbp-caption cbp-singlePage">
-                                    <!-- Blog Image -->
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="assets/img/blog/blog_4.jpg" alt="Specifie an alternate text for an image">                    
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignCenter">
-                                            <div class="cbp-l-caption-body">
-                                                <div class="cbp-l-caption-text">View Post</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Blog Information -->
-                                <div class="text-center">
-                                    <a href="blog-posts/post4.html" class="cbp-l-grid-blog-title cbp-singlePage">Ut laoreet dolore magna aliquam</a>
-                                    <div class="cbp-l-grid-blog-date">2 december 2013</div>
-                                    <div class="cbp-l-grid-blog-split">|</div>
-                                    <a href="#" class="cbp-l-grid-blog-comments">22 comments</a>
+                <!-- Blog Item -->
+                <li class="cbp-item motorization">
+                    <a href="blog-posts/post5.html" class="cbp-caption cbp-singlePage">
+                        <!-- Blog Image -->
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="assets/img/blog/blog_5.jpg" alt="Specifie an alternate text for an image">                    
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">View Post</div>
                                 </div>
-                                <div class="cbp-l-grid-blog-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat magna aliquam erat volutpat.</div>
-                            </li>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Blog Information -->
+                    <div class="text-center">
+                        <a href="blog-posts/post5.html" class="cbp-l-grid-blog-title cbp-singlePage" style="color: white;">Erat volutpat ut wisi enim ad</a>
+                        <div class="cbp-l-grid-blog-date">2 december 2013</div>
+                        <div class="cbp-l-grid-blog-split">|</div>
+                        <a href="#" class="cbp-l-grid-blog-comments">22 comments</a>
+                    </div>
+                    
+                </li>
 
-                            <!-- Blog Item -->
-                            <li class="cbp-item motion decoration">
-                                <a href="blog-posts/post5.html" class="cbp-caption cbp-singlePage">
-                                    <!-- Blog Image -->
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="assets/img/blog/blog_5.jpg" alt="Specifie an alternate text for an image">                    
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignCenter">
-                                            <div class="cbp-l-caption-body">
-                                                <div class="cbp-l-caption-text">View Post</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Blog Information -->
-                                <div class="text-center">
-                                    <a href="blog-posts/post5.html" class="cbp-l-grid-blog-title cbp-singlePage">Erat volutpat ut wisi enim ad</a>
-                                    <div class="cbp-l-grid-blog-date">2 december 2013</div>
-                                    <div class="cbp-l-grid-blog-split">|</div>
-                                    <a href="#" class="cbp-l-grid-blog-comments">22 comments</a>
+                <!-- Blog Item -->
+                <li class="cbp-item motorization">
+                    <a href="blog-posts/post6.html" class="cbp-caption cbp-singlePage">
+                        <!-- Blog Image -->
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="assets/img/blog/blog_6.jpg" alt="Specifie an alternate text for an image">                    
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">View Post</div>
                                 </div>
-                                <div class="cbp-l-grid-blog-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat magna aliquam erat volutpat.</div>
-                            </li>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Blog Information -->
+                    <div class="text-center">
+                        <a href="blog-posts/post6.html" class="cbp-l-grid-blog-title cbp-singlePage" style="color: white;">Minim veniam quis nostrud exerci</a>
+                        <div class="cbp-l-grid-blog-date">2 december 2013</div>
+                        <div class="cbp-l-grid-blog-split">|</div>
+                        <a href="#" class="cbp-l-grid-blog-comments">22 comments</a>
+                    </div>
+                    
+                </li>
 
-                            <!-- Blog Item -->
-                            <li class="cbp-item ideas motion">
-                                <a href="blog-posts/post6.html" class="cbp-caption cbp-singlePage">
-                                    <!-- Blog Image -->
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="assets/img/blog/blog_6.jpg" alt="Specifie an alternate text for an image">                    
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignCenter">
-                                            <div class="cbp-l-caption-body">
-                                                <div class="cbp-l-caption-text">View Post</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Blog Information -->
-                                <div class="text-center">
-                                    <a href="blog-posts/post6.html" class="cbp-l-grid-blog-title cbp-singlePage">Minim veniam quis nostrud exerc</a>
-                                    <div class="cbp-l-grid-blog-date">2 december 2013</div>
-                                    <div class="cbp-l-grid-blog-split">|</div>
-                                    <a href="#" class="cbp-l-grid-blog-comments">22 comments</a>
+                <!-- Blog Item -->
+                <li class="cbp-item window-blinds">
+                    <a href="blog-posts/post7.html" class="cbp-caption cbp-singlePage">
+                        <!-- Blog Image -->
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="assets/img/blog/blog_7.jpg" alt="Specifie an alternate text for an image">                    
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">View Post</div>
                                 </div>
-                                <div class="cbp-l-grid-blog-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat magna aliquam erat volutpat.</div>
-                            </li>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Blog Information -->
+                    <div class="text-center">
+                        <a href="blog-posts/post7.html" class="cbp-l-grid-blog-title cbp-singlePage" style="color: white;">Tincidunt ut laoreet dolore magna</a>
+                        <div class="cbp-l-grid-blog-date">2 december 2013</div>
+                        <div class="cbp-l-grid-blog-split">|</div>
+                        <a href="#" class="cbp-l-grid-blog-comments">22 comments</a>
+                    </div>
+                    
+                </li>
 
-                            <!-- Blog Item -->
-                            <li class="cbp-item house-design ideas">
-                                <a href="blog-posts/post7.html" class="cbp-caption cbp-singlePage">
-                                    <!-- Blog Image -->
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="assets/img/blog/blog_7.jpg" alt="Specifie an alternate text for an image">                    
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignCenter">
-                                            <div class="cbp-l-caption-body">
-                                                <div class="cbp-l-caption-text">View Post</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Blog Information -->
-                                <div class="text-center">
-                                    <a href="blog-posts/post7.html" class="cbp-l-grid-blog-title cbp-singlePage">Tation ullamcorper suscipit lobortis</a>
-                                    <div class="cbp-l-grid-blog-date">2 december 2013</div>
-                                    <div class="cbp-l-grid-blog-split">|</div>
-                                    <a href="#" class="cbp-l-grid-blog-comments">22 comments</a>
+                <!-- Blog Item -->
+                <li class="cbp-item window-blinds">
+                    <a href="blog-posts/post8.html" class="cbp-caption cbp-singlePage">
+                        <!-- Blog Image -->
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="assets/img/blog/blog_8.jpg" alt="Specifie an alternate text for an image">                    
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">View Post</div>
                                 </div>
-                                <div class="cbp-l-grid-blog-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat magna aliquam erat volutpat.</div>
-                            </li>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Blog Information -->
+                    <div class="text-center">
+                        <a href="blog-posts/post8.html" class="cbp-l-grid-blog-title cbp-singlePage" style="color: white;">Aliquam erat volutpat ut wisi enim</a>
+                        <div class="cbp-l-grid-blog-date">2 december 2013</div>
+                        <div class="cbp-l-grid-blog-split">|</div>
+                        <a href="#" class="cbp-l-grid-blog-comments">22 comments</a>
+                    </div>
+                    
+                </li>
 
-                            <!-- Blog Item -->
-                            <li class="cbp-item ideas decoration">
-                                <a href="blog-posts/post8.html" class="cbp-caption cbp-singlePage">
-                                    <!-- Blog Image -->
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="assets/img/blog/blog_8.jpg" alt="Specifie an alternate text for an image">                    
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignCenter">
-                                            <div class="cbp-l-caption-body">
-                                                <div class="cbp-l-caption-text">View Post</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Blog Information -->
-                                <div class="text-center">
-                                    <a href="blog-posts/post8.html" class="cbp-l-grid-blog-title cbp-singlePage">Nisl ut aliquip ex ea commodo</a>
-                                    <div class="cbp-l-grid-blog-date">2 december 2013</div>
-                                    <div class="cbp-l-grid-blog-split">|</div>
-                                    <a href="#" class="cbp-l-grid-blog-comments">22 comments</a>
+                <!-- Blog Item -->
+                <li class="cbp-item window-blinds">
+                    <a href="blog-posts/post9.html" class="cbp-caption cbp-singlePage">
+                        <!-- Blog Image -->
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="assets/img/blog/blog_9.jpg" alt="Specifie an alternate text for an image">                    
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">View Post</div>
                                 </div>
-                                <div class="cbp-l-grid-blog-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat magna aliquam erat volutpat.</div>
-                            </li>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Blog Information -->
+                    <div class="text-center">
+                        <a href="blog-posts/post9.html" class="cbp-l-grid-blog-title cbp-singlePage" style="color: white;">Ut wisi enim ad minim veniam quis</a>
+                        <div class="cbp-l-grid-blog-date">2 december 2013</div>
+                        <div class="cbp-l-grid-blog-split">|</div>
+                        <a href="#" class="cbp-l-grid-blog-comments">22 comments</a>
+                    </div>
+                   
+                </li>
 
-                            <!-- Blog Item -->
-                            <li class="cbp-item motion decoration">
-                                <a href="blog-posts/post9.html" class="cbp-caption cbp-singlePage">
-                                    <!-- Blog Image -->
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="assets/img/blog/blog_9.jpg" alt="Specifie an alternate text for an image">                    
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignCenter">
-                                            <div class="cbp-l-caption-body">
-                                                <div class="cbp-l-caption-text">View Post</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <!-- Blog Information -->
-                                <div class="text-center">
-                                    <a href="blog-posts/post9.html" class="cbp-l-grid-blog-title cbp-singlePage">Consequat duis autem vel eum</a>
-                                    <div class="cbp-l-grid-blog-date">2 december 2013</div>
-                                    <div class="cbp-l-grid-blog-split">|</div>
-                                    <a href="#" class="cbp-l-grid-blog-comments">22 comments</a>
+                <!-- Blog Item -->
+                <li class="cbp-item motorization">
+                    <a href="blog-posts/post10.html" class="cbp-caption cbp-singlePage">
+                        <!-- Blog Image -->
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="assets/img/blog/blog_10.jpg" alt="Specifie an alternate text for an image">                    
+                        </div>
+                        <div class="cbp-caption-activeWrap">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <div class="cbp-l-caption-text">View Post</div>
                                 </div>
-                                <div class="cbp-l-grid-blog-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat magna aliquam erat volutpat.</div>
-                            </li>                            
-                        </ul>                                                
-                    </div>                                                   
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Blog Information -->
+                    <div class="text-center">
+                        <a href="blog-posts/post10.html" class="cbp-l-grid-blog-title cbp-singlePage" style="color: white;">Nostrud exerci tation ullamcorper suscipit</a>
+                        <div class="cbp-l-grid-blog-date">2 december 2013</div>
+                        <div class="cbp-l-grid-blog-split">|</div>
+                        <a href="#" class="cbp-l-grid-blog-comments">22 comments</a>
+                    </div>
+                    
+                </li>
 
-                </div><!-- /row -->    
-            </div><!-- /container -->
-            <!-- End Blog -->
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
         </div><!-- /site-wrapper -->
         <!-- End Site Wrapper -->
 
@@ -341,60 +394,7 @@
             <div class="container">
                 <div class="row">
 
-                    <!-- About Us Information -->
-                    <div class="col-md-3 col-sm-6">                           
-                        <div class="f-logo">
-                            <h2>Our<br>Offices</h2>                                                                    
-                        </div>
-                    </div>
-                    
-                    <!-- Recent Posts -->
-                    <div class="col-md-3 col-sm-6 f-inner">                        
-                        <div class="col-sm-2">
-                            <i class="fa fa-map-marker fa-lg"></i> 
-                        </div>
-                        <div class="col-sm-10">
-                            <strong>New York</strong>
-                            <div class="f-space"></div>
-                            <address>                                
-                                795 Folsom Ave, Suite 600<br>                                
-                                <abbr title="Phone">P:</abbr> (123) 456-7890
-                                first.last@example.com
-                            </address>                           
-                        </div>
-                    </div>
-
-                    <!-- Latest Tweet -->
-                    <div class="col-md-3 col-sm-6 f-inner">
-                        <div class="col-sm-2">
-                            <i class="fa fa-map-marker fa-lg"></i> 
-                        </div>
-                        <div class="col-sm-10">
-                            <strong>London</strong>
-                            <div class="f-space"></div>
-                            <address>                                
-                                795 Folsom Ave, Suite 600<br>                                
-                                <abbr title="Phone">P:</abbr> (123) 456-7890
-                                first.last@example.com
-                            </address>
-                        </div>
-                    </div>
-
-                    <!-- Recent Works -->
-                    <div class="col-md-3 col-sm-6 f-inner">   
-                        <div class="col-sm-2">
-                            <i class="fa fa-map-marker fa-lg"></i> 
-                        </div>
-                        <div class="col-sm-10">
-                            <strong>Berlin</strong>
-                            <div class="f-space"></div>
-                            <address>                                
-                                795 Folsom Ave, Suite 600<br>                                
-                                <abbr title="Phone">P:</abbr> (123) 456-7890
-                                first.last@example.com
-                            </address>
-                        </div>      
-                    </div>                           
+                                        
 
                 </div>
             </div>
