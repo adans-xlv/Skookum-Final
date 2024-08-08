@@ -2151,3 +2151,22 @@ iframe{
 			font-size: small;
 	}
 }
+
+.service-box {
+  position: relative;
+}
+
+.service-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+.service-title-text {
+  margin: 0;
+}
