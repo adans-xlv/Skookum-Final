@@ -928,6 +928,18 @@ a:focus {
 	width: 65px;
 	margin: 0 auto;
 }
+.project-inner img {
+  width: 100%;
+  aspect-ratio: 1/1; /* adjust the aspect ratio to your liking */
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 767px) {
+  .project-inner img {
+    width: 100%;
+    height: auto;
+  }
+}
 
 /*cube portfolio*/
 .cbp-l-filters-alignRight .cbp-filter-item.cbp-filter-item-active {
