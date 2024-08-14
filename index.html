@@ -94,7 +94,7 @@
                     </ul>
                     <div class="mobile-buttons visible-xs">
                         <a href="contact.html" class="btn btn-primary btn-block">Download Brochure</a>
-                        <a href="tel:08082390849" class="btn btn-success btn-block">Call +254743272765
+                        <a href="tel:+254743272765" class="btn btn-success btn-block">Call +254743272765
 </a>
                     </div>   
                 </div>
@@ -628,42 +628,58 @@ lord-icon {
                 <p>Please note we are closed during public holidays and Sundays.</p>
                 <div class="space-bottom-2x"></div>     
                 <a href="contact.html" class="btn gold-btn">Get In Touch</a>
-                <div class="contact-info text-center">
-                    <hr class="hr-classy">
-                    <div class="contact-links">
-                        <div class="icon-container">
-                            <script src="https://cdn.lordicon.com/lordicon.js"></script>
-                            <lord-icon
-                                src="https://cdn.lordicon.com/aycieyht.json"
-                                trigger="hover"
-                                colors="primary:#d0ad55,secondary:#d0ad55"
-                                style="width:40px;height:40px;display:inline-block;">
-                            </lord-icon>
-                            <a href="mailto:skookuminvestments@gmail.com" class="contact-link" >Email us: skookuminvestments@gmail.com</a>
-                        </div>
-                        <div class="icon-container">
-                            <script src="https://cdn.lordicon.com/lordicon.js"></script>
-                            <lord-icon
-                                src="https://cdn.lordicon.com/wzrwaorf.json"
-                                trigger="hover"
-                                colors="primary:#d0ad55,secondary:#d0ad55"
-                                style="width:40px;height:40px;display:inline-block;">
-                            </lord-icon>
-                            <a href="tel:+254743272765" class="contact-link">Call: 0743272765
-                        </div>
-
-                    </div>
-                </div>
             </div>
         </div>
     </div>    
 </div>
         <!-- End Call to Action -->                     
 <style>
-    .footer-big {
+.footer-big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-big .row {
+  margin: 0 auto;
+  max-width: 1500px; /* adjust this value to your desired width */
+  
+}
+
+.footer-big .col-md-3 {
+  margin: 0 20px; /* add some margin to create space between columns */
+}
+
+/* Mobile devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  .footer-big {
     display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+  }
+  .footer-big .row {
+    margin: 0 auto;
+    max-width: 400px; /* adjust this value to your desired width */
+  }
+  .footer-big .col-md-3 {
+    margin: 0 10px; /* reduce margin on mobile devices */
+  }
+}
+/* Desktop devices (min-width: 769px) */
+@media only screen and (min-width: 769px) {
+  .footer-big {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-big .row {
+    margin: 0 auto;
+    max-width: 1200px; /* adjust this value to your desired width */
+    display: flex;
+    justify-content: center;
+  }
+  .footer-big .col-md-3 {
+    flex: 1;
+  }
 }
 </style>
         <!-- Footer -->  
@@ -683,49 +699,16 @@ lord-icon {
                         <div class="col-sm-2">
                             <i class="fa fa-map-marker fa-lg" style="font-size: 24px;"></i> 
                         </div>
-                        <div class="col-sm-10" style="font-size: 18px;">
-                            <strong style="font-size: 20px;">New York</strong>
+                        <div class="col-sm-10" style="font-size: 18px; color: white;">
+                            <strong style="font-size: 20px; color: white;">Industrial Area, Nairobi</strong>
                             <div class="f-space"></div>
                             <address>                                
-                                795 Folsom Ave, Suite 600<br>                                
-                                <abbr title="Phone">P:</abbr> (123) 456-7890
-                                first.last@example.com
+                                13, Addis Abbaba Road<br>                                
+                                +254743272765 <br> 
+                                skookuminvestments@gmail.com
                             </address>                           
                         </div>
                     </div>
-        
-                    <!-- Latest Tweet -->
-                    <div class="col-md-3 col-sm-6 f-inner">
-                        <div class="col-sm-2">
-                            <i class="fa fa-map-marker fa-lg" style="font-size: 24px;"></i> 
-                        </div>
-                        <div class="col-sm-10" style="font-size: 18px;">
-                            <strong style="font-size: 20px;">London</strong>
-                            <div class="f-space"></div>
-                            <address>                                
-                                795 Folsom Ave, Suite 600<br>                                
-                                <abbr title="Phone">P:</abbr> (123) 456-7890
-                                first.last@example.com
-                            </address>
-                        </div>
-                    </div>
-        
-                    <!-- Recent Works -->
-                    <div class="col-md-3 col-sm-6 f-inner">   
-                        <div class="col-sm-2">
-                            <i class="fa fa-map-marker fa-lg" style="font-size: 24px;"></i> 
-                        </div>
-                        <div class="col-sm-10" style="font-size: 18px;">
-                            <strong style="font-size: 20px;">Berlin</strong>
-                            <div class="f-space"></div>
-                            <address>                                
-                                795 Folsom Ave, Suite 600<br>                                
-                                <abbr title="Phone">P:</abbr> (123) 456-7890
-                                first.last@example.com
-                            </address>
-                        </div>      
-                    </div>                           
-        
                 </div>
             </div>
         </div>
@@ -734,7 +717,7 @@ lord-icon {
             <div class="container">   
                 <div class="row">                                                         
                             
-                    <div class="col-sm-6 col-md-6" style="text-align: left;">
+                    <div class="col-sm-6 col-md-6" style="text-align: left; padding-left: 40px;">
                         <!-- Social Icons -->                              
                         <ul class="footer-social" style="float: left; margin-left: 0;">
                             <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
