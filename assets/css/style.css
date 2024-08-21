@@ -2215,9 +2215,16 @@ iframe{
   display: inline-block;
   width: 100%;
   height: 100%;
+  transition: transform 0.3s; /* add transition effect */
 }
 
-.service-box img {
+.service-box a.service-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.service-box a.service-link img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -2238,13 +2245,18 @@ iframe{
   margin: 0;
 }
 
+/* Add hover effect */
+.service-box:hover {
+  transform: scale(1.3); /* scale up by 10% on hover */
+}
+
 /* Mobile view */
 @media (max-width: 767px) {
   .service-box {
     width: 100%;
     height: 300px;
   }
-  .service-box img {
+  .service-box a.service-link img {
     width: 100%;
     height: 100%;
   }
@@ -2259,8 +2271,9 @@ iframe{
     width: 300px;
     height: 300px;
   }
-  .service-box img {
+  .service-box a.service-link img {
     width: 100%;
     height: 100%;
   }
 }
+
