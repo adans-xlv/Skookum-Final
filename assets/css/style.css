@@ -2352,3 +2352,27 @@ iframe{
     font-size: 14px;
   }
 }
+.image-wrapper {
+	display: flex;
+	width: 50%;
+	gap: 10px; /* Adds space between the images */
+}
+
+.image-wrapper img {
+	width: calc(50% - 5px); /* 50% width minus half of the gap */
+	height: 300px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+	.image-wrapper {
+			width: 100%;
+			flex-direction: column;
+	}
+
+	.image-wrapper img {
+			width: 100%;
+			height: auto;
+	}
+}
