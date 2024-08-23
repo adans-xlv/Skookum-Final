@@ -389,6 +389,28 @@
         
 
 <style>
+    .social-column {
+  text-align: left;
+  padding-left: 40px;
+}
+
+.social-list {
+  float: left;
+  margin-left: 0;
+}
+
+.social-icon {
+  font-size: 24px;
+}
+
+.social-circle {
+  font-size: 24px;
+}
+
+.social-facebook, .social-twitter, .social-skype, .social-pinterest {
+  font-size: 12px;
+  color: #fff;
+}
     .footer-big {
       display: flex;
       justify-content: center;
@@ -436,64 +458,76 @@
         flex: 1;
       }
     }
+    /* Mobile screen sizes */
+@media only screen and (max-width: 768px) {
+  .social-column {
+    text-align: center;
+  }
+  .social-list {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .social-list li {
+    margin: 10px;
+  }
+}
     </style>
-
-        <!-- Footer -->  
-        <div class="footer-big text-center">
-            <div class="container">
-                <div class="row">
-        
-                    <!-- About Us Information -->
-                    <div class="col-md-3 col-sm-6">                           
-                        <div class="f-logo">
-                            <h2 style="font-size: 24px;">Our<br>Offices</h2>                                                                    
+            <!-- Footer -->  
+            <div class="footer-big text-center">
+                <div class="container">
+                    <div class="row">
+            
+                        <!-- About Us Information -->
+                        <div class="col-md-3 col-sm-6">                           
+                            <div class="f-logo">
+                                <h2 style="font-size: 24px;">Our<br>Offices</h2>                                                                    
+                            </div>
                         </div>
-                    </div>
-                    
-                    <!-- Recent Posts -->
-                    <div class="col-md-3 col-sm-6 f-inner">                        
-                        <div class="col-sm-2">
-                            <i class="fa fa-map-marker fa-lg" style="font-size: 24px;"></i> 
-                        </div>
-                        <div class="col-sm-10" style="font-size: 18px; color: white;">
-                            <strong style="font-size: 20px; color: white;">Industrial Area, Nairobi</strong>
-                            <div class="f-space"></div>
-                            <address>                                
-                                                               
-                                +254743272765 <br> 
-                                skookuminvestments@gmail.com
-                            </address>                           
+                        
+                        <!-- Recent Posts -->
+                        <div class="col-md-3 col-sm-6 f-inner">                        
+                            <div class="col-sm-2">
+                                <i class="fa fa-map-marker fa-lg" style="font-size: 24px;"></i> 
+                            </div>
+                            <div class="col-sm-10" style="font-size: 18px; color: white;">
+                                <strong style="font-size: 20px; color: white;">Industrial Area, Nairobi</strong>
+                                <div class="f-space"></div>
+                                <address>                                
+                                                                   
+                                    +254743272765 <br> 
+                                    skookuminvestments@gmail.com
+                                </address>                           
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div id="footer">
-            <div class="container">   
-                <div class="row">                                                         
-                            
-                    <div class="col-sm-6 col-md-6" style="text-align: left; padding-left: 40px;">
-                        <!-- Social Icons -->                              
-                        <ul class="footer-social" style="float: left; margin-left: 0;">
-                            <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
-                            <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
-                            <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-skype fa-stack-1x fa-inverse"></i></span></a></li>
-                            <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-pinterest fa-stack-1x fa-inverse"></i></span></a></li>
-                        </ul>
-                    </div>
-        
-                    <!-- Copyright -->                                                       
-                    <div class="col-sm-6 col-md-6 f-copyright" style="display: flex; justify-content: space-between; align-items: center;">
-                        <span style="width: 0;"></span>
-                        <span style="font-size: medium; flex: 1; text-align: center; padding-right: 40px;"><a href="https://maishaonline.co.ke/" target="_blank">Made by : Maisha Online</a></span>
-                        <span style="font-size: medium; white-space: nowrap; padding-right: 30px;">© Copyright SKOOKUM - All Rights Reserved</span>
-                    </div>
+    
+            <div id="footer">
+                <div class="container">   
+                    <div class="row">                                                         
+                                
+                        <div class="social-column" style="text-align: center; padding-left: 0;">
+                            <!-- Social Icons -->                              
+                            <ul class="social-list" style="list-style: none; margin: 0; padding: 0; display: flex; justify-content: center;">
+                              <li style="margin-right: 20px;"><a href="#" style="text-decoration: none; color: #d0ad55"><span class="social-icon" style="font-size: 24px;"><i class="fa fa-facebook" style="font-size: 24px; color: #d0ad55;"></i></span></a></li>
+                              <li style="margin-right: 20px;"><a href="#" style="text-decoration: none; color: #d0ad55;"><span class="social-icon" style="font-size: 24px;"><i class="fa fa-twitter" style="font-size: 24px; color: #d0ad55;"></i></span></a></li>
+                              <li style="margin-right: 20px;"><a href="#" style="text-decoration: none; color: #d0ad55;"><span class="social-icon" style="font-size: 24px;"><i class="fa fa-skype" style="font-size: 24px; color: #d0ad55;"></i></span></a></li>
+                              <li><a href="#" style="text-decoration: none; color: #d0ad55;"><span class="social-icon" style="font-size: 24px;"><i class="fa fa-pinterest" style="font-size: 24px; color: #d0ad55;"></i></span></a></li>
+                            </ul>
+                          </div>
             
-                </div><!-- /row -->
-            </div><!-- /container -->
-        </div>      
-        <!-- End Footer -->                        
+                        <!-- Copyright -->                                                       
+                        <div class="col-sm-6 col-md-6 f-copyright" style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="width: 0;"></span>
+                            <span style="font-size: medium; flex: 1; text-align: center; padding-right: 40px;"><a href="https://maishaonline.co.ke/" target="_blank">Made by : Maisha Online</a></span>
+                            <span style="font-size: medium; white-space: nowrap; padding-right: 30px;">© Copyright SKOOKUM - All Rights Reserved</span>
+                        </div>
+                
+                    </div><!-- /row -->
+                </div><!-- /container -->
+            </div>
+            <!-- End Footer -->                       
 
         <!-- jQuery Plugins -->                     
         <script src="assets/plugins/jquery-1.11.1.min.js"></script>                    
