@@ -2376,3 +2376,73 @@ iframe{
 			height: auto;
 	}
 }
+
+.content-wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px 20px;
+}
+
+.contents-container {
+	
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+
+.content-text {
+	padding: 40px;
+	text-align: center;
+}
+
+.content-title {
+	font-size: 32px;
+	color: white;
+	margin-bottom: 20px;
+}
+
+.content-description {
+	font-size: 18px;
+	color: white;
+	line-height: 1.6;
+	margin-bottom: 30px;
+}
+
+.content-btn {
+	display: inline-block;
+	background-color: #d0ad55;
+	color: #fff;
+	padding: 12px 24px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 18px;
+	transition: background-color 0.3s ease;
+}
+
+.content-btn:hover {
+	background-color: #23527c;
+}
+
+/* Mobile view settings */
+@media only screen and (max-width: 768px) {
+	.content-wrapper {
+			padding: 20px 10px;
+	}
+
+	.content-text {
+			padding: 20px;
+	}
+
+	.content-title {
+			font-size: 24px;
+	}
+
+	.content-description {
+			font-size: 16px;
+	}
+
+	.content-btn {
+			font-size: 16px;
+			padding: 10px 20px;
+	}
+}
