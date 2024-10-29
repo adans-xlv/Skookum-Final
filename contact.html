@@ -217,10 +217,38 @@ class="btn btn-success btn-block">Call 0100 720 239
                         <input name="phone" type="text" id="phone" size="30" value="" placeholder="Phone" required/>
                         <br />
                         <!-- Message -->                                                                        
-                        <textarea name="message" cols="40" rows="5" id="message" placeholder="Message" required></textarea>
+                        <textarea name="message" cols="40" rows="5" id="message" placeholder="Tell us which product or service you are interested in." required></textarea>
                         <br />
                         <!-- Submit Button -->                                        
-                        <button type="submit" class="btn btn-primary" style="color: white; border-radius: 5px;" id="submit" value="Submit">Submit to recieve our brochure</button>
+                        <style>
+                            .submit-btn {
+                                display: inline-block;
+                                white-space: normal;
+                                text-align: center;
+                                padding: 10px 20px;
+                                width: auto;
+                                max-width: 100%;
+                                margin: 0;
+                                line-height: 1.2;
+                            }
+
+                            @media screen and (max-width: 768px) {
+                                .submit-btn {
+                                    font-size: 14px;
+                                    padding: 8px 15px;
+                                }
+                            }
+
+                            @media screen and (max-width: 480px) {
+                                .submit-btn {
+                                    width: 100%;
+                                    padding: 10px;
+                                }
+                            }
+                        </style>                                        
+                        <button type="submit" class="btn btn-primary submit-btn" style="color: white; border-radius: 5px;" id="submit" value="Submit">
+                            Request Brochure
+                        </button>
                     </div>
                 </fieldset>
             </form>
