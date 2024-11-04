@@ -128,7 +128,8 @@ class="btn btn-success btn-block">Call 0100 720 239
                         <!-- Description -->                                        
                         <h3 style="color: white;">We'd love to hear from you</h3>   
                         <br>                                     
-                        <p style="color: white;">Get in touch with us to learn more about our quality furniture and interior design solutions. Our team is ready to assist you with any inquiries about our products and services.</p>
+                        <p style="color: white;">
+                            Get in touch to learn more about our quality window treatments and interior design solutions. Our team is ready to assist you with any inquiries about our products and services.</p>
                         <br>
                         <div class="row">
                             <!-- Address -->                       
@@ -140,7 +141,7 @@ class="btn btn-success btn-block">Call 0100 720 239
                                     <span><b style="color: white;">Address</b></span> 
                                     <address>                            
                                         <small style="color: white;">
-                                            2 Addis Ababa Road<br>
+                                            Addis Ababa Road<br>
                                             Nairobi, Kenya                                                            
                                         </small>                               
                                     </address>             
@@ -257,44 +258,42 @@ class="btn btn-success btn-block">Call 0100 720 239
                             style="border-radius: 8px; padding: 8px; width: 100%; margin-bottom: 10px;"
                         ></textarea>
                         <br />
+                    
+                        <!-- Submit Button -->
+                        <div style="text-align: right;">
+                            <button type="submit" class="btn btn-primary submit-btn" style="color: white; border-radius: 5px;" id="submit" value="Submit">
+                                submit
+                            </button>
+                        </div>
                     </div>
-                        <!-- Submit Button -->                                        
-                        <style>
+                    
+                    <style>
+                        .submit-btn {
+                            display: inline-block;
+                            white-space: normal;
+                            text-align: center;
+                            padding: 10px 20px;
+                            width: auto;
+                            max-width: 100%;
+                            margin: 0;
+                            line-height: 1.2;
+                        }
+                    
+                        @media screen and (max-width: 768px) {
                             .submit-btn {
-                                display: inline-block;
-                                white-space: normal;
-                                text-align: center;
-                                padding: 10px 20px;
-                                width: auto;
-                                max-width: 100%;
-                                margin: 0;
-                                line-height: 1.2;
+                                font-size: 14px;
+                                padding: 8px 15px;
+                                padding-bottom: 10px;
                             }
-
-                            @media screen and (max-width: 768px) {
-                                .submit-btn {
-                                    font-size: 14px;
-                                    padding: 8px 15px;
-                                }
+                        }
+                    
+                        @media screen and (max-width: 480px) {
+                            .submit-btn {
+                                width: 100%;
+                                padding: 10px;
                             }
-
-                            @media screen and (max-width: 480px) {
-                                .submit-btn {
-                                    width: 100%;
-                                    padding: 10px;
-                                }
-                            }
-                        </style>                                        
-                        <button type="submit" class="btn btn-primary submit-btn" style="color: white; border-radius: 5px;" id="submit" value="Submit">
-                            Request Brochure
-                        </button>
-                    </div>
-                </fieldset>
-            </form>
-        </div>
-    </div>   
-</div>          
-<!-- End Contact Form -->
+                        }
+                    </style>
 
 
 <!-- Google Map - Full Width -->
@@ -306,6 +305,7 @@ class="btn btn-success btn-block">Call 0100 720 239
         position: relative;
         padding: 0;
         margin: 40px 0;
+        padding-bottom: 20px;
     }
 
     .map-container {
@@ -314,6 +314,7 @@ class="btn btn-success btn-block">Call 0100 720 239
         height: 450px;
         padding: 0;
         margin: 0;
+        padding-bottom: 20px;
     }
 
     .map-container iframe {
@@ -323,6 +324,8 @@ class="btn btn-success btn-block">Call 0100 720 239
         width: 100%;
         height: 100%;
         border: 0;
+        padding-top: 20px;
+        border-radius: 10px;
     }
 
     /* Media Queries */
