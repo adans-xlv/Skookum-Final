@@ -63,59 +63,120 @@
         
 
         <style>
-          /* Ensure no outline is shown on focus */
-          .navbar-nav li a {
-              outline: none; /* Remove outline */
-          }
-      
-          /* Optional: Remove the default focus outline for accessibility */
-          .navbar-nav li a:focus {
-              outline: none; /* Remove outline on focus */
-              box-shadow: none; /* Remove any box-shadow that might appear */
-          }
+        .navbar-nav {
+    display: flex; /* Use flexbox for the navbar items */
+    align-items: center; /* Center items vertically */
+    margin: 0; /* Remove default margin */
+}
+
+.navbar-nav li {
+    list-style: none; /* Remove bullet points */
+}
+
+.navbar-nav li a {
+    color: white ; /* Set link color to white and use !important */
+    outline: none; /* Remove outline */
+    padding: 15px 20px; /* Add padding for better spacing */
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar-nav li a:hover {
+    background-color: white; /* Light background on hover */
+}
+
+.search-container {
+  padding-top: 10px;
+    display: flex; /* Use flexbox for the search container */
+    align-items: center; /* Center items vertically */
+    margin-left: auto; /* Push it to the far right */
+}
+
+.search-container input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px; /* Space between input and button */
+}
+
+.search-container button {
+    padding: 5px;
+    border: none;
+    background-color: #d0ad55; /* Button color */
+    color: white; /* Button text color */
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #b58b45; /* Darker shade on hover */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .search-container {
+        width: 100%; /* Make search container full width */
+        margin-top: 10px; /* Add some margin on top */
+    }
+
+    .search-container input[type="text"] {
+        width: calc(100% - 60px); /* Full width minus button width */
+    }
+
+    .search-container button {
+        width: 55px; /* Set button width */
+    }
+}
       </style>
       
       <nav class="navbar navbar-default navbar-fixed-top header-nav" role="navigation" style="background-color: #000 !important; border: none;">
-          <div class="container">
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="index.html" style="font-size: large; color: #d0ad55;">
-                      <img src="assets/img/Logo/Cropped Logo.jpg" alt="Logo" style="height: 50px; margin-right: 10px; font-family: 'Raleway', sans-serif;">
-                      SKOOKUM INVESTMENTS LTD
-                  </a>
-              </div>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html" style="font-size: large; color: #d0ad55;">
+                    <img src="assets/img/Logo/Cropped Logo.jpg" alt="Logo" style="height: 50px; margin-right: 10px;">
+                    SKOOKUM INVESTMENTS LTD
+                </a>
+            </div>
 
-              
-      
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav">
-                      <li class="active">
-                          <a href="#home" class="nav-link" style="color: white;" onmouseover="this.style.color='#d0ad55'" onmouseout="this.style.color='white'" onclick="this.style.color='#d0ad55'">Home</a>
-                      </li>
-                      <li>
-                          <a href="#about" class="nav-link" style="color: white;" onmouseover="this.style.color='#d0ad55'" onmouseout="this.style.color='white'" onclick="this.style.color='#d0ad55'">About</a>
-                      </li>
-                      <li>
-                          <a href="#gallery" class="nav-link" style="color: white;" onmouseover="this.style.color='#d0ad55'" onmouseout="this.style.color='white'" onclick="this.style.color='#d0ad55'">Gallery</a>
-                      </li>
-                      <li>
-                          <a href="#services" class="nav-link" style="color: white;" onmouseover="this.style.color='#d0ad55'" onmouseout="this.style.color='white'" onclick="this.style.color='#d0ad55'">Products and Services</a>
-                      </li>
-                      <li>
-                          <a href="#contact" class="nav-link" style="color: white;" onmouseover="this.style.color='#d0ad55'" onmouseout="this.style.color='white'" onclick="this.style.color='#d0ad55'">How to Order</a>
-                      </li>
-                  </ul>
-                  <div class="mobile-buttons visible-xs">
-                      <a href="contact.html" class="btn btn-primary btn-block">Download Brochure</a>
-                  </div>
-              </div>
-          </div>
-      </nav>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#home" style="color: white; text-decoration: none;" onmouseover="this.style.backgroundColor='#d0ad55';" onmouseout="this.style.backgroundColor='';">Home</a>
+                </li>
+                <li>
+                    <a href="#about" style="color: white; text-decoration: none;" onmouseover="this.style.backgroundColor='#d0ad55';" onmouseout="this.style.backgroundColor='';">About</a>
+                </li>
+                <li>
+                    <a href="#gallery" style="color: white; text-decoration: none;" onmouseover="this.style.backgroundColor='#d0ad55';" onmouseout="this.style.backgroundColor='';">Gallery</a>
+                </li>
+                <li>
+                    <a href="#services" style="color: white; text-decoration: none;" onmouseover="this.style.backgroundColor='#d0ad55';" onmouseout="this.style.backgroundColor='';">Products and Services</a>
+                </li>
+                <li>
+                    <a href="/contact.html" style="color: white; text-decoration: none;" onmouseover="this.style.backgroundColor='#d0ad 55';" onmouseout="this.style.backgroundColor='';">Contact Us</a>
+                </li>
+            </ul>
+            <div class="mobile-buttons visible-xs">
+              <a href="tel:0100 720 239" class="btn btn-success btn-block">Call 0100 720 239</a>
+          </div> 
+                <!-- Search Feature -->
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search...">
+                    <button onclick="searchH1()">Search</button>
+                </div>
+            </div>
+        </div>
+    </nav>
       
       <script>
       $(document).ready(function() {
@@ -129,6 +190,30 @@
           });
       });
       </script>
+     <script>
+      function searchH1() {
+          const query = document.getElementById('searchInput').value.toLowerCase();
+          const h1Elements = document.getElementsByTagName('h1');
+          let found = false;
+
+          // Clear previous highlights
+          for (let h1 of h1Elements) {
+              h1.style.backgroundColor = ''; // Reset background color
+          }
+
+          // Search through each h1 element
+          for (let h 1 of h1Elements) {
+              if (h1.textContent.toLowerCase().includes(query)) {
+                  h1.style.backgroundColor = 'yellow'; // Highlight matching h1
+                  found = true;
+              }
+          }
+
+          if (!found) {
+              alert('No matches found');
+          }
+      }
+  </script>  
 <!-- FULL-WIDTH IMAGE WITH BUTTON AND HERO TEXT -->
 <div class="slideshow-container">
     <div class="slideshow-slide active">
