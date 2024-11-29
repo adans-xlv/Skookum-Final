@@ -31,9 +31,122 @@
         <link rel="stylesheet" href="assets/plugins/owl/owl-carousel/owl.theme.css">         
         <link rel="stylesheet" href="assets/plugins/cube/cubeportfolio.min.css">
         <link rel="stylesheet" href="assets/plugins/jquery.mmenu.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700" rel="stylesheet">
+
 
         <!-- Css Theme -->           
         <link rel="stylesheet" href="assets/css/style.css">
+        <style>
+        /* Navbar styles */
+        .ftco-navbar-light {
+            background: black;
+            z-index: 3;
+            padding: 0;
+            box-shadow: 0px 5px 20px -17px rgba(0, 0, 0, 0.34);
+        }
+
+        .ftco-navbar-light .navbar-brand {
+            color: #d0ad55;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 1;
+        }
+
+        .ftco-navbar-light .navbar-brand:hover,
+        .ftco-navbar-light .navbar-brand:focus {
+            color: #d0ad55;
+        }
+
+        .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+            font-size: 15px;
+            padding: 2rem 20px;
+            font-weight: 500;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            opacity: 1 !important;
+        }
+
+        .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            bottom: 0;
+            left: 0;
+            background-color: #f1bc31;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.2s ease-in-out;
+            z-index: -1;
+        }
+
+        .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+            color: #fff;
+        }
+
+        .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover:before {
+            visibility: visible;
+            background-color: #f1bc31;
+            transform: scaleX(1);
+        }
+
+        .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu {
+            border: none;
+            background: #fff;
+            box-shadow: 0px 10px 34px -20px rgba(0, 0, 0, 0.41);
+            border-radius: 4px;
+        }
+
+        .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu .dropdown-item {
+            font-size: 15px;
+            color: #000;
+        }
+
+        .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu .dropdown-item:hover,
+        .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu .dropdown-item:focus {
+            background: #f1bc31;
+            color: #fff;
+        }
+
+        .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
+            color: #fff;
+            background: #f1bc31;
+            border-radius: 0px;
+        }
+
+        .ftco-navbar-light .navbar-nav > .nav-item.active > a {
+            color: #fff;
+        }
+
+        .ftco-navbar-light .navbar-toggler {
+            border: none;
+            color: rgba(0, 0, 0, 0.5) !important;
+            cursor: pointer;
+            padding-right: 0;
+            text-transform: uppercase;
+            font-size: 16px;
+            letter-spacing: .1em;
+        }
+
+        .ftco-navbar-light .navbar-toggler:focus {
+            outline: none !important;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 991.98px) {
+            .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: .9rem;
+                padding-bottom: .9rem;
+            }
+        }
+      </style>
     </head>
     <!--Start of Tawk.to Script-->
     <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
@@ -62,131 +175,51 @@
 
         
 
-        <style>
-        .navbar-nav {
-    display: flex; /* Use flexbox for the navbar items */
-    align-items: center; /* Center items vertically */
-    margin: 0; /* Remove default margin */
-}
-
-.navbar-nav li {
-    list-style: none; /* Remove bullet points */
-}
-
-.navbar-nav li a {
-    color: white ; /* Set link color to white and use !important */
-    outline: none; /* Remove outline */
-    padding: 15px 20px; /* Add padding for better spacing */
-    text-decoration: none; /* Remove underline */
-}
-
-.navbar-nav li a:hover {
-    background-color: white; /* Light background on hover */
-}
-
-.search-container {
-  padding-top: 10px;
-    display: flex; /* Use flexbox for the search container */
-    align-items: center; /* Center items vertically */
-    margin-left: auto; /* Push it to the far right */
-}
-
-.search-container input[type="text"] {
-    padding: 5px;
-    border: none;
-    border-radius: 4px;
-    margin-right: 5px; /* Space between input and button */
-}
-
-.search-container button {
-    padding: 5px;
-    border: none;
-    background-color: #d0ad55; /* Button color */
-    color: white; /* Button text color */
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.search-container button:hover {
-    background-color: #b58b45; /* Darker shade on hover */
-}
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    .navbar-nav {
-        flex-direction: column; /* Stack items vertically on small screens */
-        align-items: flex-start; /* Align items to the start */
-    }
-
-    .search-container {
-        width: 100%; /* Make search container full width */
-        margin-top: 10px; /* Add some margin on top */
-    }
-
-    .search-container input[type="text"] {
-        width: calc(100% - 60px); /* Full width minus button width */
-    }
-
-    .search-container button {
-        width: 55px; /* Set button width */
-    }
-}
-      </style>
-      
-      <nav class="navbar navbar-default navbar-fixed-top header-nav" role="navigation" style="background-color: #000 !important; border: none;">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html" style="font-size: large; color: #d0ad55;">
-                    <img src="assets/img/Logo/Cropped Logo.jpg" alt="Logo" style="height: 50px; margin-right: 10px;">
-                    SKOOKUM INVESTMENTS LTD
-                </a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li class="active">
-                    <a href="#home" style="color: white; text-decoration: none;" onmouseover="this.style.backgroundColor='#d0ad55';" onmouseout="this.style.backgroundColor='';">Home</a>
-                </li>
-                <li>
-                    <a href="#about" style="color: white; text-decoration: none;" onmouseover="this.style.backgroundColor='#d0ad55';" onmouseout="this.style.backgroundColor='';">About</a>
-                </li>
-                <li>
-                    <a href="#gallery" style="color: white; text-decoration: none;" onmouseover="this.style.backgroundColor='#d0ad55';" onmouseout="this.style.backgroundColor='';">Gallery</a>
-                </li>
-                <li>
-                    <a href="#services" style="color: white; text-decoration: none;" onmouseover="this.style.backgroundColor='#d0ad55';" onmouseout="this.style.backgroundColor='';">Products and Services</a>
-                </li>
-                <li>
-                    <a href="/contact.html" style="color: white; text-decoration: none;" onmouseover="this.style.backgroundColor='#d0ad 55';" onmouseout="this.style.backgroundColor='';">Contact Us</a>
-                </li>
-            </ul>
-            <div class="mobile-buttons visible-xs">
-              
-<a href="tel:0100 720 239" class="btn btn-success btn-block">Call 0100 720 239</a>
-          </div> 
-
-            </div>
-        </div>
-    </nav>
-      
+        <nav class="navbar navbar-expand-lg navbar-light ftco-navbar-light" id="ftco-navbar">
+          <div class="container">
+              <a class="navbar-brand" style="font-family: raleway; font-size: large; font-weight: bold;" href="#">SKOOKUM INVESTMENTS LIMITED<span></span></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="fa fa-bars"></span> Menu
+              </button>
+              <div class="collapse navbar-collapse" id="ftco-nav">
+                  <ul class="navbar-nav m-auto">
+                      <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Page</a>
+                          <div class="dropdown-menu" aria-labelledby="dropdown04">
+                              <a class="dropdown-item" href="#">Page 1</a>
+                              <a class="dropdown-item" href="#">Page 2</a>
+                              <a class="dropdown-item" href="#">Page 3</a>
+                              <a class="dropdown-item" href="#">Page 4</a>
+                          </div>
+                      </li>
+                      <li class="nav-item"><a href="#" class="nav-link">Catalog </a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  
       <script>
-      $(document).ready(function() {
-          $('.navbar-nav li a').on('click', function() {
-              // Remove active class from all links
-              $('.navbar-nav li').removeClass('active');
-              // Add active class to the clicked link
-              $(this).parent().addClass('active');
-              // Collapse the navbar on mobile
-              $('.navbar-collapse').collapse('hide');
+          document.addEventListener('DOMContentLoaded', function () {
+              const navbarToggler = document.querySelector('.navbar-toggler');
+              const navbarCollapse = document.querySelector('#ftco-nav');
+  
+              // Check local storage for toggle state
+              const isOpen = localStorage.getItem('navbarOpen') === 'true';
+              if (isOpen) {
+                  navbarCollapse.classList.add('show');
+              }
+  
+              navbarToggler.addEventListener('click', function () {
+                  const isExpanded = navbarCollapse.classList.toggle('show');
+                  // Save the toggle state in local storage
+                  localStorage.setItem('navbarOpen', isExpanded);
+              });
           });
-      });
       </script>
+  
  
 <!-- FULL-WIDTH IMAGE WITH BUTTON AND HERO TEXT -->
 <div class="slideshow-container">
