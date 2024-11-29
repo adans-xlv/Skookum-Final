@@ -167,13 +167,10 @@
                 </li>
             </ul>
             <div class="mobile-buttons visible-xs">
-              <a href="tel:0100 720 239" class="btn btn-success btn-block">Call 0100 720 239</a>
+              
+<a href="tel:0100 720 239" class="btn btn-success btn-block">Call 0100 720 239</a>
           </div> 
-                <!-- Search Feature -->
-                <div class="search-container">
-                    <input type="text" id="searchInput" placeholder="Search...">
-                    <button onclick="searchH1()">Search</button>
-                </div>
+
             </div>
         </div>
     </nav>
@@ -190,30 +187,7 @@
           });
       });
       </script>
-     <script>
-      function searchH1() {
-          const query = document.getElementById('searchInput').value.toLowerCase();
-          const h1Elements = document.getElementsByTagName('h1');
-          let found = false;
-
-          // Clear previous highlights
-          for (let h1 of h1Elements) {
-              h1.style.backgroundColor = ''; // Reset background color
-          }
-
-          // Search through each h1 element
-          for (let h 1 of h1Elements) {
-              if (h1.textContent.toLowerCase().includes(query)) {
-                  h1.style.backgroundColor = 'yellow'; // Highlight matching h1
-                  found = true;
-              }
-          }
-
-          if (!found) {
-              alert('No matches found');
-          }
-      }
-  </script>  
+ 
 <!-- FULL-WIDTH IMAGE WITH BUTTON AND HERO TEXT -->
 <div class="slideshow-container">
     <div class="slideshow-slide active">
